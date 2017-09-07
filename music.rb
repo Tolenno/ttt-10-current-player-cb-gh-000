@@ -23,7 +23,7 @@ def spotify(music_library)
     if artist_element.class != Array #ignore strings like "Adele"
       puts "Artist: #{artist_element}"
     else
-      artist_element.each do |album_element| 
+      artist_element.each do |album_element|
         if album_element.class != Array
           puts "Album: #{album_element}"
         else
@@ -34,6 +34,7 @@ def spotify(music_library)
       end
     end
   end
+end
 end
 
 spotify(music_library)
